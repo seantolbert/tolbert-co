@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'home',
+    'compressor',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -121,7 +122,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 STATIC_URL = 'static/'
 
-STATICFILE_DIRS = [
+STATICFILES_DIRS = [
     BASE_DIR / "static"
 ]
 
@@ -129,3 +130,11 @@ STATICFILE_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+COMPRESS_FILTERS = {'css': ['home.admin.PostCSSFilter']}
+
+COMPRESS_ROOT = BASE_DIR / 'static'
+
+COMPRESS_ENABLED = True
+
+STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
