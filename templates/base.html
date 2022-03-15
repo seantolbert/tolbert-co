@@ -1,4 +1,4 @@
-{% load static tailwind_tags %}
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,6 @@
     <link rel="shortcut icon" href="{% static 'images/tolbertcologo.jpg' %}">
     <meta name="description" content="{# description should be 160 characters max so google can display the whole thing! #}">
     
-    <!-- {% tailwind_css %} -->
     <link rel="stylesheet" href="{% static 'css/tolbert_co.css' %}">
     
     {% block extra_css %}
