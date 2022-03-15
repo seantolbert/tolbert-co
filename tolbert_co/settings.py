@@ -32,7 +32,10 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'home',
-    'compressor',
+
+    'tailwind',
+    'theme',
+    'django_browser_reload',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -50,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_browser_reload.middleware.BrowserReloadMiddleware',
 ]
 
 ROOT_URLCONF = 'tolbert_co.urls'
@@ -131,10 +135,8 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-COMPRESS_FILTERS = {'css': ['home.admin.PostCSSFilter']}
+TAILWIND_APP_NAME = 'theme'
 
-COMPRESS_ROOT = BASE_DIR / 'static'
-
-COMPRESS_ENABLED = True
-
-STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
+INTERNAL_IPS = [
+    "127.0.0.1",
+]

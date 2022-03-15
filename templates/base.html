@@ -1,5 +1,4 @@
-{% load compress %}
-{% load static %}
+{% load static tailwind_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,17 +8,19 @@
     
     <title>{% block title %}{% endblock %}</title>
     
-    <meta name="description" content="{# description should be 160 characters max so google can display the whole thing! #}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="shortcut icon" href="{% static 'images/tolbertcologo.jpg' %}">
+    <meta name="description" content="{# description should be 160 characters max so google can display the whole thing! #}">
+    
+    <!-- {% tailwind_css %} -->
     <link rel="stylesheet" href="{% static 'css/tolbert_co.css' %}">
     
     {% block extra_css %}
     {% endblock %}
 
 </head>
-<body class="bg-blue-500">
+<body>
     {% include 'navbar.html' %}
     {% block content %}{% endblock %}
     {% include 'footer.html' %}
