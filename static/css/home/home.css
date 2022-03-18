@@ -1,45 +1,48 @@
 body {
-    position: absolute;
-    color: white;
-    width: 100%;
+  position: absolute;
+  color: white;
+  width: 100%;
 }
 
 .home-logo {
-    z-index: -2;
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    width: 400px;
+  z-index: -2;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 400px;
 }
 
 .header-container {
-    margin: 100px;
-    width: 800px;
-    border: rgba(0, 0, 0, 0) 1px solid;
+  margin: 100px;
+  width: 800px;
+  border: rgba(0, 0, 0, 0) 1px solid;
 }
 
 .header {
-    color: white;
-    font-size: 8rem;
-    /* border: white 1px solid; */
-    margin-bottom: 0;
-    font-weight: bold;
+  color: white;
+  font-size: 8rem;
+  /* border: white 1px solid; */
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.sub-header {
+    margin-left: 20px;
 }
 
 .header-name {
-    font-size: 2rem;
-    /* border: 1px white solid; */
-    margin: 0;
+  font-size: 2rem;
+  /* border: 1px white solid; */
+  margin: 0;
 }
 
 .header-message {
-    /* border: 1px white solid; */
-    margin-top: 0;
-    font-size: 1.5rem;
-    /* text-align: r; */
+  /* border: 1px white solid; */
+  margin-top: 0;
+  font-size: 1.5rem;
+  /* text-align: r; */
 }
 
 .content-container {
-    margin-left: 100px;
+  margin-left: 100px;
 }
-
