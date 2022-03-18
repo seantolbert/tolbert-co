@@ -1,17 +1,28 @@
 body {
     position: absolute;
+    color: white;
     /* z-index: 1; */
     /* margin-top: 0; */
-    width: 100%;
+    /* width: 100%; */
 }
 
 
 .header-container {
     margin: 100px;
+    width: 800px;
+    border: white 1px solid;
 }
 
 .header {
     color: white;
-    font-size: 100px;
-    width: 100%;
+    font-size: 8rem;
+    border: white 1px solid;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.header-message {
+    border: 1px white solid;
+    margin-top: 0;
+    font-size: 2rem;
 }
