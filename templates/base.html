@@ -10,7 +10,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="shortcut icon" href="{% static 'images/tolbertcologo.jpg' %}">
+    <link rel="shortcut icon" href="{% static 'images/tolbertcologo.png' %}">
     <meta name="description" content="{# description should be 160 characters max so google can display the whole thing! #}">
     
     <link rel="stylesheet" href="{% static 'css/tolbert_co.css' %}">
@@ -20,6 +20,14 @@
 
 </head>
 <body>
+    <div id="crossfade">
+        <img src="{% static 'images/warm.png' %}" >
+        <img src="{% static 'images/pink.png' %}" >
+        <img src="{% static 'images/purple.png' %}" >
+        <img src="{% static 'images/blue.png' %}" >
+        <img src="{% static 'images/green.png' %}" >
+        <img src="{% static 'images/primary.png' %}" >
+    </div>
     {% include 'navbar.html' %}
     {% block content %}{% endblock %}
     {% include 'footer.html' %}

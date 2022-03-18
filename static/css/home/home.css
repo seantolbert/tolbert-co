@@ -1,3 +1,17 @@
-h1 {
-    color: red;
+body {
+    position: absolute;
+    /* z-index: 1; */
+    /* margin-top: 0; */
+    width: 100%;
+}
+
+
+.header-container {
+    margin: 100px;
+}
+
+.header {
+    color: white;
+    font-size: 100px;
+    width: 100%;
 }
