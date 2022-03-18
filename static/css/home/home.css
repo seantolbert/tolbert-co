@@ -4,6 +4,13 @@ body {
     width: 100%;
 }
 
+.home-logo {
+    z-index: -2;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 400px;
+}
 
 .header-container {
     margin: 100px;
@@ -19,20 +26,20 @@ body {
     font-weight: bold;
 }
 
+.header-name {
+    font-size: 2rem;
+    /* border: 1px white solid; */
+    margin: 0;
+}
+
 .header-message {
     /* border: 1px white solid; */
     margin-top: 0;
-    font-size: 2rem;
-    float: right;
+    font-size: 1.5rem;
+    /* text-align: r; */
 }
 
-.home-logo {
-    background: url(../../images/tolbertcologo.png);
-    z-index: -2;
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    width: 400px;
+.content-container {
+    margin-left: 100px;
 }
-
 
