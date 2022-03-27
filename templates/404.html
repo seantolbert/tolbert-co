@@ -1,3 +1,13 @@
+{% expands 'base.html' %}
+{% load static %}
+{% block title %}Page not found{% endblock title %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/404.css' %}">
+{% endblock extra_css %}
+
 <h1>Sorry we have NO idea what is going on with your query...</h1>
 
-<p>Wish you luck though!!</p>
+
+
+<p>Mind Trying again?</p>

@@ -1,29 +1,30 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block title %}Tolbert & Co{% endblock %}
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}Tolbert & Co{% endblock %} 
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/home/home.css' %}">
-{% endblock extra_css %}
+<link rel="stylesheet" href="{% static 'css/home/home.css' %}" />
+{% endblock extra_css %} 
 
 {% block content %}
-<img class="home-logo" src="{% static 'images/tolbertcologo.png' %}" alt="">
+<img class="home-logo" src="{% static 'images/tolbertcologo.png' %}" alt="" />
 <div class="header-container">
-    <p class="header">Tolbert & Co</p>
-    <div class="sub-header">
-        <p class="header-name">My name is Sean Tolbert</p>
-        <p class="header-message">I am a creative full-stack developer and designer.</p>
-    </div>
+  <p class="header">Tolbert & Co</p>
+  <div class="sub-header">
+    <p class="header-name">My name is Sean Tolbert</p>
+    <p class="header-message">
+      I am a creative full-stack developer and designer.
+    </p>
+  </div>
 </div>
 
-
 <div class="content-container">
-    <ul class="home-nav__list">
-        <li class="home-nav__list-item">Blog</li>
-        <li class="home-nav__list-item">Blog</li>
-        <li class="home-nav__list-item">Blog</li>
-    </ul>
+  <ul class="home-nav__list">
+    <li class="home-nav__list-item"><a href="#">Portfolio</a></li>
+    <li class="home-nav__list-item">Blog</li>
+    <li class="home-nav__list-item">Gallery</li>
+    <li class="home-nav__list-item">Contact</li>
+  </ul>
 </div>
 
 {% endblock %}

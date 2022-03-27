@@ -14,6 +14,7 @@ body {
 
 .header-container {
   margin: 100px;
+  margin-bottom: 0;
   width: 800px;
   border: rgba(0, 0, 0, 0) 1px solid;
 }
@@ -45,4 +46,16 @@ body {
 
 .content-container {
   margin-left: 100px;
+  /* border: 1px white solid; */
 }
+
+.home-nav__list {
+    list-style: none;
+}
+
+.home-nav__list-item {
+    padding: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
