@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'home',
     'blog',
     'gallery',
+    'quotate',
 
     'django.contrib.admin',
     'django.contrib.auth',
